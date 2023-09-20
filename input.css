@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS to hide all images except the first one */
+.image-container .image-item {
+    display: none;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 1s ease; /* Transition for opacity with 1-second duration */
+}
+
+.image-container .image-item:first-child {
+    display: block;
+    opacity: 1; /* Initial opacity set to 1 for the first image */
+}
+

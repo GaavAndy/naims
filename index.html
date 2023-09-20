@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAIMS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-color-primary text-color-white tracking-wider">
+   <header>
+    <nav class="container flex justify-between items-center">
+        <div class="w-20 py-5 text text-color-secondary font-bold text-3xl">
+            <a href="#home">
+                <span class="text-color-white">NA</span>IMS
+            </a>
+        </div>
+        <div>
+            <ul class="hidden lg:flex items-center space-x-6">
+                <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact Us</a></li>
+                <li><a href="#about-us" class="hover:text-color-secondary ease-in duration-200">About Us</a></li>
+                <li><a href="#news" class="hover:text-color-secondary ease-in duration-200">News</a></li>
+                <li><a href="#purpose" class="hover:text-color-secondary ease-in duration-200">Purpose</a></li>
+                <li>
+                    <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Connect to NAIMS</button>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu" class="hidden bg-black h-[100vh] absolute inset-0">
+            <ul class="h-full grid place-items-center py-20">
+                <li><a id="hLink" href="" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                <li><a id="hLink" href="" class="hover:text-color-secondary ease-in duration-200">Contact Us</a></li>
+                <li><a id="hLink" href="#about-us" class="hover:text-color-secondary ease-in duration-200">About Us</a></li>
+                <li><a id="hLink" href="#news" class="hover:text-color-secondary ease-in duration-200">News</a></li>
+                <li><a id="hLink" href="#purpose" class="hover:text-color-secondary ease-in duration-200">Purpose</a></li>
+                <li>
+                    <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Connect to NAIMS</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   </header> 
+   <main>
+    <section id="home">
+        <div class="container py-20">
+            <div class="flex flex-col lg:relative static items-center z-20 md:flex-row">
+                <!-- write up -->
+                <div class="text-center inset-0 z-10 bg-opacity-75 rounded-md lg:mt-[100px] bg-black mb-12 md:text-left md:w-2/3 p-6 md:pr-10">
+                    <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">Agricultural Insights with NAIMS</h1>
+                    <p class="leading-relaxed mb-10">
+                        The Nigerian Agricultural Information Management System (NAIMS) is your gateway to a world of valuable agricultural data and insights. 
+                        NAIMS is designed to streamline information management in Nigeria's vibrant agricultural sector, providing farmers, researchers, and policymakers with easy access to critical data, trends, and resources. With NAIMS, you can harness the power of information to make informed decisions, enhance productivity, and contribute to the growth and sustainability of Nigeria's agricultural landscape.
+                    </p>
+                    <div class="flex cursor-pointer lg:w-[75%] mx-auto w-[75%] justify-center py-4 font-bold text-xl items-center border border-5  border-color-secondary rounded-md hover:opacity-80 ease-in duration-200">
+                        <button>Read More</button>
+                        <i class="fas fa-arrow-right ml-10"></i>
+                    </div>
+                    
+                </div>
+                <!-- image div -->
+                <div class="lg:absolute static inset-0 z-0 lg:w-[75%] w-full lg:ml-[300px] ml-0">
+                    <div class="image-container">
+                        <img src="./img/carrot.jpg" alt="image 1" class="rounded-full border border-10 w-full h-full image-item">
+                        <img src="./img/apples.jpg" alt="image 2" class="rounded-full border border-10 w-full h-full image-item">
+                        <img src="./img/grapes.jpg" alt="image 3" class="rounded-full border border-10 w-full h-full image-item">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+</main>
+
+   <script src="js/app.js"></script>
+   <script>
+    var images = document.querySelectorAll('.image-item');
+    var currentIndex = 0;
+
+    function showNextImage() {
+        // Fade out the current image
+        images[currentIndex].style.opacity = '0';
+
+        setTimeout(function () {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+
+            // Delay before fading in the next image
+            setTimeout(function () {
+                images[currentIndex].style.opacity = '1';
+                setTimeout(showNextImage, 4000); // Change image every 2 seconds
+            }, 100);
+        }, 1000); // Wait for 1 second before hiding the current image
+    }
+
+    // Start the image carousel
+    showNextImage();
+</script>
+
+
+</body>
+</html>
