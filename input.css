@@ -13,4 +13,57 @@
     display: block;
     opacity: 1; /* Initial opacity set to 1 for the first image */
 }
+.user-text {
+    display: none;
+}
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s line forwards; 
+}
+.user-pic {
+    transition: all 0.2s ease;
+}
+.user-pic.active-pic {
+    border: 2px solid #002b00;
+}
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  swiper-container-3d swiper-slide-shadow-left,
+  swiper-container-3d swiper-slide-shadow-right
+   {
+    background-image: none;
+  }
+  
+@keyframes moveup {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+.title {
+    @apply text-3xl md:text-4xl font-bold leading-snug
+}
 

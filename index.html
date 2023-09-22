@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Nabla&family=Niconne&family=Rubik+Gemstones&family=Tapestry&family=Varela&family=Varela+Round&display=swap');
+      </style>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 </head>
-<body class="bg-color-primary text-color-white tracking-wider">
+<body class="text-color-white bg-green-700 tracking-wider">
    <header>
     <nav class="container flex justify-between items-center">
         <div class="w-20 py-5 text text-color-secondary font-bold text-3xl">
@@ -48,36 +55,228 @@
     </nav>
    </header> 
    <main>
-    <section id="home">
+    <section id="home" class="relative">
+      <!-- title -->
+      <div class="w-[100%] absolute mt-[50px] mx-auto lg:px-8 px-6">
+            <div class=" bottom-0 right-0 border-solid border-b-[20px] border-r-[20px] border-t-[20px] border-l-[20px]  border-x-white border-y-transparent p-5">
+              <h1 class="lg:font-normal font-medium font-rubik-gemstones lg:text-3xl text-2xl leading-10 text-black text-center">
+                  Nigerian Agricultural Information Management System ( <span class="text-white font-normal">NAIMS</span>)
+              </h1>
+            </div>
+        </div>
+      <div class="w-80 h-80 bg-gradient-to-b from-green-500 via-color-blob to-color-secondary absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full">
+      </div>
+      <div class="w-80 h-80 bg-gradient-to-b from-color-secondary via-color-blob to-green-500 absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full">
+      </div> 
+      <div class="container py-20">
+          <div class="flex flex-col lg:relative static items-center z-20 md:flex-row mt-[150px] ">
+              <!-- write up -->
+              <div class="text-center inset-0 z-10 bg-opacity-75 rounded-md lg:mt-[100px] -mt-[350px] bg-black mb-12 md:text-left md:w-2/3 w-[85%] p-6 md:pr-10 lg:order-1 order-2">
+                  <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">Agricultural Insights with NAIMS</h1>
+                  <p class="leading-relaxed mb-10">
+                      The Nigerian Agricultural Information Management System (NAIMS) is your gateway to a world of valuable agricultural data and insights. 
+                      NAIMS is designed to streamline information management in Nigeria's vibrant agricultural sector, providing farmers, researchers, and policymakers with easy access to critical data, trends, and resources. With NAIMS, you can harness the power of information to make informed decisions, enhance productivity, and contribute to the growth and sustainability of Nigeria's agricultural landscape.
+                  </p>
+                  <div class="flex cursor-pointer lg:w-[75%] mx-auto w-[75%] justify-center py-4 font-bold text-xl items-center border border-5  border-color-secondary rounded-md hover:opacity-80 ease-in duration-200">
+                      <button>Read More</button>
+                      <i class="fas fa-arrow-right ml-10"></i>
+                  </div>
+                  
+              </div>
+              <!-- image div -->
+              <div class="lg:absolute static inset-0 z-0 lg:w-[75%] h-[600px] w-full lg:ml-[300px] lg:mt-0 mt-20 ml-0 lg:order-2 order-1">
+                  <div class="image-container w-full h-full">
+                      <img src="./img/crop1.jfif" alt="image 1" class="rounded-md border border-10 w-full h-full image-item">
+                      <img src="./img/crop2.jfif" alt="image 2" class="rounded-md border border-10 w-full h-full image-item">
+                      <img src="./img/crop3.jfif" alt="image 3" class="rounded-md border border-10 w-full h-full image-item">
+                  </div>
+              </div>
+          </div>  
+      </div>
+  </section>
+    <section id="features" class="bg-color-primary-light">
         <div class="container py-20">
-            <div class="flex flex-col lg:relative static items-center z-20 md:flex-row">
-                <!-- write up -->
-                <div class="text-center inset-0 z-10 bg-opacity-75 rounded-md lg:mt-[100px] bg-black mb-12 md:text-left md:w-2/3 p-6 md:pr-10">
-                    <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">Agricultural Insights with NAIMS</h1>
-                    <p class="leading-relaxed mb-10">
-                        The Nigerian Agricultural Information Management System (NAIMS) is your gateway to a world of valuable agricultural data and insights. 
-                        NAIMS is designed to streamline information management in Nigeria's vibrant agricultural sector, providing farmers, researchers, and policymakers with easy access to critical data, trends, and resources. With NAIMS, you can harness the power of information to make informed decisions, enhance productivity, and contribute to the growth and sustainability of Nigeria's agricultural landscape.
-                    </p>
-                    <div class="flex cursor-pointer lg:w-[75%] mx-auto w-[75%] justify-center py-4 font-bold text-xl items-center border border-5  border-color-secondary rounded-md hover:opacity-80 ease-in duration-200">
-                        <button>Read More</button>
-                        <i class="fas fa-arrow-right ml-10"></i>
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h2 class="font-bold text-2xl text-green-950 mb-4">Our Features</h2>
+                <h1 class="title">Lorem  elit. Totam assumenda natus beatae similique at  ea autem!</h1>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                <!-- card 1 -->
+                <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                        <i class="fa-solid fa-calendar-days text-4xl"></i>
                     </div>
+                    <h3 class="text-xl font-bold py-4">Always working</h3>
+                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                </div>
+                <!-- card 2-->
+                <div class="bg-green-800 border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div class="bg-green-700 inline-block rounded-2xl py-5 px-6">
+                        <i class="fa-solid fa-dollar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Financial Support</h3>
+                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                </div>
+                <!-- card 3 -->
+                <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                        <i class="fa-solid fa-phone text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Support 24/24</h3>
+                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-work" class="bg-green-700">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h2 class="font-bold text-2xl text-green-950 mb-4">How to use this app</h2>
+                <h1 class="title">Lorem  elit. Totam assumenda natus beatae similique at  ea autem!</h1>
+            </div>
+            <div class="flex flex-col item-center space-between space-y-6 md:flex-row md:space-y-0 md:space-x-6 ">
+               <!-- Card 1  -->
+               <div class="text-center cursor-pointer">
+                <div class="relative bg-color-primary-light inline-block px-6 py-3 rounded-lg cursor-pointer">
+                    <p class="text-6xl">1</p>
+                </div>
+                <h3 class="text-xl font-bold py-4">Visit our site</h3>
+                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+               </div>
+               <!-- Card 2  -->
+               <div class="text-center cursor-pointer">
+                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer">
+                    <p class="text-6xl">2</p>
+                </div>
+                <h3 class="text-xl font-bold py-4">Stay Connected</h3>
+                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+               </div>
+               <!-- Card 3  -->
+               <div class="text-center cursor-pointer">
+                <div class="relative bg-color-primary-light inline-block px-6 py-3 rounded-lg cursor-pointer">
+                    <p class="text-6xl">3</p>
+                </div>
+                <h3 class="text-xl font-bold py-4">Enjoy the Features</h3>
+                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="reveiw bg-color-primary-light">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h2 class="font-bold text-2xl text-green-950 mb-4">Resources</h2>
+                <h1 class="title">Lorem  elit. Totam assumenda natus beatae similique at  ea autem!</h1>
+            </div>
+            <!-- reveiw container -->
+        <div class="">
+            <div class="flex items-center justify-center flex-wrap gap-5 space-x-5">
+                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic active-pic" onclick="showReview()">
+                    <p class="font-bold" onclick="showReview()">1</p>
+                </div>
+                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
+                    <p class="font-bold" onclick="showReview()">2</p>
+                </div>
+                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
+                    <p class="font-bold" onclick="showReview()">3</p>
+                </div>
+                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
+                    <p class="font-bold" onclick="showReview()">4</p>
+                </div>
+            </div>
+            <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                <div class="user-text active-text">
+                    <h4 class="font-bold text-color-primary-dark">title of the review</h4>
+                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
+                </div>
+                <div class="user-text">
+                    <h4 class="font-bold text-color-primary-dark">title of the review 2</h4>
+                    <p class="md:text-2xl mt-6">Second review  consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
                     
                 </div>
-                <!-- image div -->
-                <div class="lg:absolute static inset-0 z-0 lg:w-[75%] w-full lg:ml-[300px] ml-0">
-                    <div class="image-container">
-                        <img src="./img/carrot.jpg" alt="image 1" class="rounded-full border border-10 w-full h-full image-item">
-                        <img src="./img/apples.jpg" alt="image 2" class="rounded-full border border-10 w-full h-full image-item">
-                        <img src="./img/grapes.jpg" alt="image 3" class="rounded-full border border-10 w-full h-full image-item">
-                    </div>
+                <div class="user-text">
+                    <h4 class="font-bold text-color-primary-dark">title of the review 3</h4>
+                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
+                    
                 </div>
-            </div>  
+                <div class="user-text">
+                    <h4 class="font-bold text-color-primary-dark">title of the review 4</h4>
+                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
+                    
+                </div>
+            </div>
+        </div>
+        </div>   
+    </section>
+    <section class="">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h2 class="font-bold text-2xl text-green-950 mb-4">Latest News</h2>
+                <h1 class="title cursor-pointer">Read more news from here...</h1>
+            </div>
+            <div class="slider relative w-full min-h-[100vh] flex justify-center items-center overflow-hidden">
+                  <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/apples.jpg" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/crop3.jfif" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/carrot.jpg" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/apples.jpg" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/crop3.jfif" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonialBox">
+                            <img src="./img/carrot.jpg" class="qoute" alt="">
+                            <div class="py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
         </div>
     </section>
 </main>
 
    <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+
    <script>
     var images = document.querySelectorAll('.image-item');
     var currentIndex = 0;
@@ -101,8 +300,43 @@
 
     // Start the image carousel
     showNextImage();
+    // review
+
+    const userTexts = document.getElementsByClassName('user-text');
+    const userPics = document.getElementsByClassName('user-pic');
+
+    const showReview = () => {
+        for(userPic of userPics) {
+          userPic.classList.remove("active-pic")  
+        }
+        for(userText of userTexts) {
+            userText.classList.remove('active-text')
+        }
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add('active-pic');
+        userTexts[i].classList.add('active-text');
+
+    }
 </script>
 
-
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modfier: 2,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    })
+</script> 
 </body>
 </html>
