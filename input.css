@@ -47,8 +47,16 @@ swiper-container {
   swiper-container-3d swiper-slide-shadow-right
    {
     background-image: none;
+    
   }
   
+  .box {
+  --mask: linear-gradient(to top left, #0000 100px,#000 0); 
+    
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
 @keyframes moveup {
     0% {
         margin-top: 40px;
