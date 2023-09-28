@@ -1,82 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
   <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    swiper-slide {
-      background-position: center;
-      background-size: cover;
+    /* Custom CSS */
+    .my-carousel {
       width: 300px;
-      height: 300px;
+      overflow: hidden;
+      position: relative;
     }
 
-    swiper-slide img {
+    .my-slide {
+      width: 300px;
+      height: 200px;
+      background-color: #f2f2f2;
+      display: none;
+      float: left;
+    }
+
+    .my-slide.active {
       display: block;
-      width: 100%;
+    }
+
+    .my-pagination {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .my-pagination button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      cursor: pointer;
     }
   </style>
 </head>
-
 <body>
-  <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-    <swiper-slide>
-      <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-    </swiper-slide>
-  </swiper-container>
+  <div class="my-carousel">
+    <div class="my-slide active">
+      <img src="img/apples.jpg" alt="">
+    </div>
+    <div class="my-slide">
+      <img src="img/crop1.jfif" alt="">
+    </div>
+    <div class="my-slide">
+      <img src="img/crop6.webp"  alt="">
+    </div>
+  </div>
+  <button id="myPrevBtn" class="btn">
+    <!-- <i class="fa-solid fa-angle-left"></i> -->
+  </button>
+  <button id="myNextBtn" class="btn">
+    <!-- <i class="fa-solid fa-angle-right"></i> -->
+  </button>
+  <div class="my-pagination">
+    <button class="my-pagination-btn active"></button>
+    <button class="my-pagination-btn"></button>
+    <button class="my-pagination-btn"></button>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script>
+    const slides = document.querySelectorAll(".my-slide");
+    const prevBtn = document.getElementById("myPrevBtn");
+    const nextBtn = document.getElementById("myNextBtn");
+    const paginationButtons = document.querySelectorAll(".my-pagination-btn");
 
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add("active");
+          paginationButtons[i].classList.add("active");
+        } else {
+          slide.classList.remove("active");
+          paginationButtons[i].classList.remove("active");
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    paginationButtons.forEach((btn, index) => {
+      btn.addEventListener("click", () => showSlide(index));
+    });
+
+    function autoSlide() {
+      nextSlide();
+    }
+
+    // Automatically slide every 3 seconds
+    setInterval(autoSlide, 3000);
+
+    showSlide(currentIndex);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>

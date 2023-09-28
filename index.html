@@ -11,10 +11,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Nabla&family=Niconne&family=Rubik+Gemstones&family=Tapestry&family=Varela&family=Varela+Round&display=swap');
       </style>
-      <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+      
 </head>
 <body class="text-color-white bg-white tracking-wider">
    <header class="w-full h-[200px] bg-color-primary">
@@ -76,9 +79,9 @@
             </p>
         </div>
         <!-- card  -->
-        <div class="border-2 border-solid bg-green-700 text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+        <div class="border-2 border-solid bg-green-700 text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
             
-            <h3 class="text-xl font-bold py-4">Goalof NAIMS</h3>
+            <h3 class="text-xl font-bold py-4">Goals of NAIMS</h3>
             <p class="leading-relaxed">
                 NAIMS contributes to the sustainability of Nigeria's agricultural landscape. By promoting efficient resource utilization, reducing wastage, and optimizing production, it supports long-term sustainability goals.
                 These objectives collectively aim to modernize and improve the Nigerian agricultural sector, leading to increased food security, economic growth, and overall development.
@@ -86,94 +89,108 @@
         </div>
         <div class="bg-color-primary w-full">
             <h1 class="font-bold lg:text-4xl text-2xl pb-10">Objectives of NAIMS</h1>
-            <p class="border-b-2 text-right p-3 border-b-gray-300">
+            <p class="border-b-2 lg:text-right text-left p-3 border-b-gray-300">
                 first event listed
             </p>
-            <p class="border-b-2 p-3 text-right mt-2 border-b-gray-300">
+            <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
                 second event listed
             </p>
-            <p class="border-b-2 p-3 text-right mt-2 border-b-gray-300">
+            <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
                 third event listed
             </p>
-            <p class="border-b-2 p-3 text-right mt-2 border-b-gray-300">
+            <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
                 fouth event listed
             </p>
         </div>
       </div>
     </section>
-    <section id="features" class="bg-white">
+    <section id="search" class="bg-white">
         <div class="container py-20">
             <div class="text-center m-auto rounded-full mb-20 md:w-2/3">
-            <form action="" method="post" class="w-full bg-color-primary rounded-full flex justify-between p-2">
-                <div class="flex-10">
-                    <input type="text" placeholder="Search by Keyword" class="w-">
-                </div>
-                <div>
-                    <button>Search</button>
-                </div>
+            <form action="" method="post" class="w-full bg-color-primary h-[50px] rounded-full flex justify-between items-center">
+                <input type="text" placeholder="Search by Keyword" class="w-[80%] h-full border-2 text-black border-color-primary pl-5 rounded-l-full outline-none">
+                <button type="submit" class="w-[20%]">Search</button>
             </form>
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
                 <!-- card 1 -->
-                <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                    <div class="bg-color-primary inline-block rounded-2xl py-5 px-6">
-                        <i class="fa-solid fa-calendar-days text-4xl"></i>
+                <div class="border-2 border-solid border-color-primary text-center py-5 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
+                    <div class="inline-block h-[60%] w-full">
+                        <img src="img/pig.jpg" class="w-full h-full"  alt="">
                     </div>
-                    <h3 class="text-xl font-bold py-4">Always working</h3>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                    <h3 class="text-xl font-bold py-2 text-black">Animal</h3>
+                    <p class="leading-relaxed text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam.</p>
                 </div>
                 <!-- card 2-->
-                <div class="bg-green-800 border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                    <div class="bg-green-700 inline-block rounded-2xl py-5 px-6">
-                        <i class="fa-solid fa-dollar text-4xl"></i>
+                <div class="border-2 border-solid border-color-primary text-center py-5 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
+                    <div class="inline-block h-[60%] w-full">
+                        <img src="img/guine_corn.jpg" class="w-full h-full"  alt="">
                     </div>
-                    <h3 class="text-xl font-bold py-4">Financial Support</h3>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                    <h3 class="text-xl font-bold py-2 text-black">Crop</h3>
+                    <p class="leading-relaxed text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam.</p>
                 </div>
                 <!-- card 3 -->
-                <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
-                        <i class="fa-solid fa-phone text-4xl"></i>
+                <div class="border-2 border-solid border-color-primary text-center py-5 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
+                    <div class="inline-block h-[60%] w-full">
+                        <img src="img/maize.jpg" class="w-full h-full"  alt="">
                     </div>
-                    <h3 class="text-xl font-bold py-4">Support 24/24</h3>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
+                    <h3 class="text-xl font-bold py-2 text-black">Crop</h3>
+                    <p class="leading-relaxed text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam.</p>
+                </div>
+                <!-- card 4 -->
+                <div class="border-2 border-solid border-color-primary text-center py-5 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
+                    <div class="inline-block h-[60%] w-full">
+                        <img src="img/goat.jpg" class="w-full h-full"  alt="">
+                    </div>
+                    <h3 class="text-xl font-bold py-2 text-black">Animal</h3>
+                    <p class="leading-relaxed text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperia.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="how-it-work" class="bg-green-700">
+    <section id="carousel" class="">
         <div class="container py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2">
-                <h2 class="font-bold text-2xl text-green-950 mb-4">How to use this app</h2>
-                <h1 class="title">Lorem  elit. Totam assumenda natus beatae similique at  ea autem!</h1>
-            </div>
-            <div class="flex flex-col item-center space-between space-y-6 md:flex-row md:space-y-0 md:space-x-6 ">
-               <!-- Card 1  -->
-               <div class="text-center cursor-pointer">
-                <div class="relative bg-color-primary-light inline-block px-6 py-3 rounded-lg cursor-pointer">
-                    <p class="text-6xl">1</p>
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
+                <div class="col-span-2">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                          <img src="img/guine_corn.jpg" class="w-full h-full" alt="Slide 1">
+                        </div>
+                        <div class="carousel-slide">
+                          <img src="img/pig.jpg" class="w-full h-full" alt="Slide 2">
+                        </div>
+                        <div class="carousel-slide">
+                          <img src="img/maize.jpg" class="w-full h-full" alt="Slide 3">
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold py-4">Visit our site</h3>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
-               </div>
-               <!-- Card 2  -->
-               <div class="text-center cursor-pointer">
-                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer">
-                    <p class="text-6xl">2</p>
+                <div class="col-span-1">
+                    <div class="my-carousel">
+                        <div class="my-slide active">
+                          <img src="img/g1.jpeg" class="w-full h-full" alt="">
+                        </div>
+                        <div class="my-slide">
+                          <img src="img/g2.jpeg" class="w-full h-full" alt="">
+                        </div>
+                        <div class="my-slide">
+                          <img src="img/g3.jpeg" class="w-full h-full"  alt="">
+                        </div>
+                      </div>
+                      <button id="myPrevBtn" class="btn">
+                        <!-- <i class="fa-solid fa-angle-left"></i> -->
+                      </button>
+                      <button id="myNextBtn" class="btn">
+                        <!-- <i class="fa-solid fa-angle-right"></i> -->
+                      </button>
+                      <div class="my-pagination">
+                        <button class="my-pagination-btn active"></button>
+                        <button class="my-pagination-btn"></button>
+                        <button class="my-pagination-btn"></button>
+                      </div>
                 </div>
-                <h3 class="text-xl font-bold py-4">Stay Connected</h3>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
-               </div>
-               <!-- Card 3  -->
-               <div class="text-center cursor-pointer">
-                <div class="relative bg-color-primary-light inline-block px-6 py-3 rounded-lg cursor-pointer">
-                    <p class="text-6xl">3</p>
-                </div>
-                <h3 class="text-xl font-bold py-4">Enjoy the Features</h3>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum.</p>
-               </div>
             </div>
         </div>
+            
     </section>
     <section class="reveiw bg-color-primary-light">
         <div class="container py-20">
@@ -222,65 +239,7 @@
         </div>   
     </section>
     <section class="">
-        <div class="container py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2">
-                <h2 class="font-bold text-2xl text-green-950 mb-4">Latest News</h2>
-                <h1 class="title cursor-pointer">Read more news from here...</h1>
-            </div>
-            <div class="slider relative w-full min-h-[100vh] flex justify-center items-center overflow-hidden">
-                  <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-                    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-                    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/apples.jpg" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/crop3.jfif" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/carrot.jpg" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/apples.jpg" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/crop3.jfif" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonialBox">
-                            <img src="./img/carrot.jpg" class="qoute" alt="">
-                            <div class="py-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, libero eaque! Ut culpa repellat eveniet suscipit odit dolores reiciendis corrupti. </p>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
-            </div>
+        <div class="container py-20"> 
         </div>
     </section>
 </main>
@@ -288,68 +247,71 @@
    <script src="js/app.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
 
-
-   <script>
-    var images = document.querySelectorAll('.image-item');
-    var currentIndex = 0;
-
-    function showNextImage() {
-        // Fade out the current image
-        images[currentIndex].style.opacity = '0';
-
-        setTimeout(function () {
-            images[currentIndex].style.display = 'none';
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].style.display = 'block';
-
-            // Delay before fading in the next image
-            setTimeout(function () {
-                images[currentIndex].style.opacity = '1';
-                setTimeout(showNextImage, 4000); // Change image every 2 seconds
-            }, 100);
-        }, 1000); // Wait for 1 second before hiding the current image
-    }
-
-    // Start the image carousel
-    showNextImage();
-    // review
-
-    const userTexts = document.getElementsByClassName('user-text');
-    const userPics = document.getElementsByClassName('user-pic');
-
-    const showReview = () => {
-        for(userPic of userPics) {
-          userPic.classList.remove("active-pic")  
+        function showSlide(n) {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
         }
-        for(userText of userTexts) {
-            userText.classList.remove('active-text')
+
+        function nextSlide() {
+        showSlide(currentSlide + 1);
         }
-        let i = Array.from(userPics).indexOf(event.target);
 
-        userPics[i].classList.add('active-pic');
-        userTexts[i].classList.add('active-text');
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+        showSlide(currentSlide); // Show the initial slide
 
-    }
-</script>
-
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modfier: 2,
-            slideShadows: true,
-        },
-        pagination: {
-            el: '.swiper-pagination',
+      </script>
+       <script>
+        const slide = document.querySelectorAll(".my-slide");
+        const prevBtn = document.getElementById("myPrevBtn");
+        const nextBtn = document.getElementById("myNextBtn");
+        const paginationButtons = document.querySelectorAll(".my-pagination-btn");
+    
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+          slide.forEach((slide, i) => {
+            if (i === index) {
+              slide.classList.add("active");
+              paginationButtons[i].classList.add("active");
+            } else {
+              slide.classList.remove("active");
+              paginationButtons[i].classList.remove("active");
+            }
+          });
         }
-    })
-</script> 
+    
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % slide.length;
+          showSlide(currentIndex);
+        }
+    
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+          showSlide(currentIndex);
+        }
+    
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+    
+        paginationButtons.forEach((btn, index) => {
+          btn.addEventListener("click", () => showSlide(index));
+        });
+    
+        function autoSlide() {
+          nextSlide();
+        }
+    
+        // Automatically slide every 3 seconds
+        setInterval(autoSlide, 3000);
+    
+        showSlide(currentIndex);
+      </script>
 </body>
 </html>
