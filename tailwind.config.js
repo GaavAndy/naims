@@ -12,6 +12,9 @@ module.exports = {
         "color-white": "#fff",
         "color-blob": "#AA27DF",
       },
+      backgroundImage: {
+        'hero-background':'img/tomato.jpg'
+      },
       fontFamily: {
         'rubik-gemstones': ['"Rubik Gemstones"', 'sans'],
       },
