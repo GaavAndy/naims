@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 
+/* hero background */
+
+.hero-bg {
+  background-image: url('img/tomato.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+
 /* Custom CSS */
 .my-carousel {
     width: 100%;
@@ -125,7 +137,7 @@ swiper-container {
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }  */
-/* .box {
+.box {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('img/tomato.jpg');
     background-size: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), cover;
@@ -149,7 +161,7 @@ swiper-container {
   left: 50%;
   background: linear-gradient(to top right, transparent 50%, #000 50%);
   background-size: 100% 100%;
-} */
+}
 
 /* .box {
   position: relative;

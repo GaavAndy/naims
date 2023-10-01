@@ -13,7 +13,7 @@ module.exports = {
         "color-blob": "#AA27DF",
       },
       backgroundImage: {
-        'hero-background':'img/tomato.jpg'
+        'hero-background': "url('/img/plaintain.jpg')",     
       },
       fontFamily: {
         'rubik-gemstones': ['"Rubik Gemstones"', 'sans'],

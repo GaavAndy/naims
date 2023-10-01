@@ -20,7 +20,7 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
       
 </head>
 <body class="text-color-white bg-white tracking-wider">
-   <header class="w-full h-[150px] bg-color-primary">
+   <header class="w-full h-[150px] bg-color-primary fixed top-0  z-[1000]">
     <nav class="container w-full h-full bg-color-primary flex lg:flex-col lg:justify-center justify-between">
      <div class="flex items-center" >
         <div class="w-20 py-2 text text-color-secondary font-bold text-3xl">
@@ -45,14 +45,23 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                 <li><a href="#gallery" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Gallery</a></li>
                 <li><a href="#events" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Events</a></li>
                 <li><a href="#login" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Login</a></li>
-                
+                <li>
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                        <form action="" method="post" class="w-full bg-white h-[40px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full border-2 text-black border-white pl-5 rounded-l-full outline-none">
+                            <button type="submit" class="w-[20%]">
+                                <i class="fa-solid fa-magnifying-glass text-yellow-500"></i>
+                            </button>
+                        </form>
+                    </div>
+                </li>
             </ul>
         </div>
         <!-- Mobile screen -->
-        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+        <div id="hamburger" class="lg:hidden cursor-pointer z-[100]">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <div id="menu" class="hidden bg-black h-[100vh] absolute inset-0 z-10">
+        <div id="menu" class="hidden bg-black h-[100vh] absolute inset-0 z-50">
             <ul class="h-full grid place-items-center py-20">
                 <li><a href="#about-us" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">About Us</a></li>
                 <li><a href="#contact" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Contact Us</a></li>
@@ -61,13 +70,51 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                 <li><a href="#gallery" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Gallery</a></li>
                 <li><a href="#events" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Events</a></li>
                 <li><a href="#login" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Login</a></li>
+                <li>
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                        <form action="" method="post" class="w-full bg-white h-[40px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full border-2 text-black border-white pl-5 rounded-l-full outline-none">
+                            <button type="submit" class="w-[20%]">
+                                <i class="fa-solid fa-magnifying-glass text-yellow-500"></i>
+                            </button>
+                        </form>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
     </nav>
    </header> 
    <main>
-    <section id="hero" class="bg-white">
+    <section id="hero" class="">
+        <div 
+        class="relative overflow-hidden py-20 bg-cover bg-no-repeat lg:h-[900px] h-[1400px] p-12 text-center"
+        style="background-image: url('img/tomato.jpg');">
+        <div
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="flex  flex-col lg:flex-row h-full lg:py-0 lg:px-0 py-20 px-10  items-center justify-center mx-auto  lg:w-[80%] w-full">
+            <!-- card -->
+            <div class="border-2 pr-11 border-solid z-20 lg:w-[50%] w-full lg:-mt-[100px] mt-10 border-r-0 shadow-lg border-t-color-primary border-t-8 border-l-color-primary border-l-8 border-b-0  bg-[rgba(0,0,0,0.5)] text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-[rgba(0,0,0,0.7)] ease-in duration-200">
+                <h3 class="text-xl font-bold py-4 text-color-primary">Goals of NAIMS</h3>
+                <p class="leading-relaxed">
+                    NAIMS contributes to the sustainability of Nigeria's agricultural landscape. By promoting efficient resource utilization, reducing wastage, and optimizing production, it supports long-term sustainability goals.
+                    These objectives collectively aim to modernize and improve the Nigerian agricultural sector, leading to increased food security, economic growth, and overall development.
+                </p>
+            </div>  
+            <!-- card -->
+            <div class="border-2 border-solid z-10 pl-11 px-5 lg:w-[50%] w-full lg:mt-[200px] mt-5 border-l-0 lg:-ml-[50px] ml-0 shadow-lg border-r-color-primary  border-r-8 border-t-0 border-b-color-primary border-b-8  bg-[rgba(0,0,0,0.5)] text-center py-20 rounded-2xl cursor-pointer hover:bg-[rgba(0,0,0,0.7)] ease-in duration-200">
+                <h3 class="text-xl font-bold py-4 text-color-primary">Aim of NAIMS</h3>
+                <p class="leading-relaxed">
+                    NAIMS aims to centralize agricultural data from various sources, including farms, research institutions, and government agencies. This centralized data repository facilitates efficient data management and analysis.
+                    The system's goal is to make agricultural information readily accessible to farmers, researchers, policymakers, and other stakeholders.
+                </p>
+            </div>  
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- <section id="hero" class="bg-white">
     
         <div class="py-6 px-10 p-5 grid lg:grid-cols-3 gap-5  grid-cols-1 bg-color-primary box">
           <div class="w-full bg-color-primary p-5 pt-20">
@@ -78,15 +125,15 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
               </p>
           </div>
           <!-- card  -->
-          <div class="border-2 border-solid z-10 shadow-lg border-t-color-primary border-t-8 border-b-color-primary border-b-8 drop-shadow-lg shadow-gray-500 bg-green-700 text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
+          <!-- <div class="border-2 border-solid z-10 shadow-lg border-t-color-primary border-t-8 border-b-color-primary border-b-8 drop-shadow-lg shadow-gray-500 bg-green-700 text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
               
               <h3 class="text-xl font-bold py-4">Goals of NAIMS</h3>
               <p class="leading-relaxed">
                   NAIMS contributes to the sustainability of Nigeria's agricultural landscape. By promoting efficient resource utilization, reducing wastage, and optimizing production, it supports long-term sustainability goals.
                   These objectives collectively aim to modernize and improve the Nigerian agricultural sector, leading to increased food security, economic growth, and overall development.
               </p>
-          </div>
-          <div class="bg-color-primary w-full">
+          </div> -->
+          <!-- <div class="bg-color-primary w-full">
               <h1 class="font-bold lg:text-4xl text-2xl pb-10">Objectives of NAIMS</h1>
               <p class="border-b-2 lg:text-right text-left p-3 border-b-gray-300">
                   first event listed
@@ -101,9 +148,9 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                   fouth event listed
               </p>
           </div>
-        </div>
-    </section>
-    <section id="search" class="bg-white mt-[300px]">
+        </div> -->
+    </section> -->
+    <section id="search" class="bg-white py-3">
         <div class="container py-20">
             <div class="text-center m-auto rounded-full mb-20 md:w-2/3">
             <form action="" method="post" class="w-full bg-color-primary h-[50px] rounded-full flex justify-between items-center">
@@ -147,7 +194,7 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
             </div>
         </div>
     </section>
-    <section id="carousel" class="bg-color-primary">
+    <section id="carousel" class="bg-white">
         <div class="container py-20">
             <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
                 <div class="col-span-2">
@@ -188,84 +235,85 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                       </div>
                 </div>
             </div>
-        </div>
-            
+        </div>  
     </section>
-    <section class="reveiw bg-color-primary">
-        <div class="container py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2">
-                <h2 class="font-bold text-2xl text-green-950 mb-4">Resources</h2>
-                <h1 class="title">Lorem  elit. Totam assumenda natus beatae similique at  ea autem!</h1>
+    <section id="" class="bg-color-primary py-5">
+        <div class="container py-5">
+        <h3 class="lg:text-4xl text-3xl font-bold text-gray-950 text-center mb-5 py-5">Lorem ipsum dolor sit, amet consectetur adipisicing.<h3>
+        <div class="grid lg:grid-cols-2 gap-10 grid-cols-1">
+            <div class="">
+                <img src="img/rice_1.png" class="h-[300px] w-full rounded-lg" alt="">
             </div>
-            <!-- reveiw container -->
-        <div class="">
-            <div class="flex items-center justify-center flex-wrap gap-5 space-x-5">
-                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic active-pic" onclick="showReview()">
-                    <p class="font-bold" onclick="showReview()">1</p>
-                </div>
-                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
-                    <p class="font-bold" onclick="showReview()">2</p>
-                </div>
-                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
-                    <p class="font-bold" onclick="showReview()">3</p>
-                </div>
-                <div class="relative bg-color-secondary inline-block px-6 py-3 rounded-lg cursor-pointer user-pic" onclick="showReview()">
-                    <p class="font-bold" onclick="showReview()">4</p>
-                </div>
-            </div>
-            <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
-                <div class="user-text active-text">
-                    <h4 class="font-bold text-color-primary-dark">title of the review</h4>
-                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
-                </div>
-                <div class="user-text">
-                    <h4 class="font-bold text-color-primary-dark">title of the review 2</h4>
-                    <p class="md:text-2xl mt-6">Second review  consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
-                    
-                </div>
-                <div class="user-text">
-                    <h4 class="font-bold text-color-primary-dark">title of the review 3</h4>
-                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
-                    
-                </div>
-                <div class="user-text">
-                    <h4 class="font-bold text-color-primary-dark">title of the review 4</h4>
-                    <p class="md:text-2xl mt-6">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus! Quas corporis animi dolores quis nobis! Inventore sint obcaecati commodi? sit amet consectetur adipisicing elit. Iure laborum tempore blanditiis, accusantium ad ipsa nam porro beatae sit iste?</p>
-                    
-                </div>
+            <div class="">
+                <h3 class="text-xl py-2 font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p class="text-xl font-sm text-black mt-5">Lorem ipsum dolor sit amet
+                     consectetur, adipisicing elit. Eveniet
+                      cumque fugiat deleniti voluptate molestiae possimus maxime facere dicta
+                       rerum expedita voluptatum maiores
+                     veritatis dolor, odit sit dignissimos quis, aspernatur voluptatibus!
+                </p>
+                <p class="mt-5">
+                    <button class="rounded-full bg-gray-600 p-3 text-center w-[30%] hover:bg-gray-800 text-xl font-semibold">Contact Us</button>
+                </p>
             </div>
         </div>
-        </div>   
+           
+        </div>
     </section>
     <section id="footer" class="bg-black">
         <div class="container py-20"> 
             <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
                 <div class="lg:col-span-1 col-span-3">
-                    <h3>Quick links</h3>
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-3xl font-bold text-2xl lg:w-[44%] w-[30%]">Quick links</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">About Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Contact Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Gallery</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">News</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-1 col-span-3">
-                    <h3>More from NAIMS</h3>
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-3xl lg:w-[73%] w-[50%] font-bold text-2xl">More from NAIMS</h3>
                     <ul>
-                        <li><a href="#">Statistics</a></li>
-                        <li><a href="#">Publications/a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Partners</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Statistics</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Publications</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Events</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Login</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Partners</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-1 col-span-3">
-                    <h3 class="lg:text-4xl text-2xl font-bold text-gray-900">News Letter</h3>
-                    <div class="text-center m-auto rounded-full mb-20 md:w-2/3">
-                        <form action="" method="post" class="w-full bg-color-primary h-[50px] rounded-full flex justify-between items-center">
-                            <input type="text" placeholder="Search by Keyword" class="w-[80%] h-full border-2 text-black border-color-primary pl-5 rounded-l-full outline-none">
-                            <button type="submit" class="w-[20%]">Search</button>
+                    <h3 class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-3xl font-bold text-2xl">News Letter</h3>
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                        <form action="" method="post" class="w-full bg-color-primary h-[40px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter email" class="w-[80%] h-full border-2 text-black border-color-primary pl-5 rounded-l-full outline-none">
+                            <button type="submit" class="w-[20%]">Submit</button>
                         </form>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-medium ml-2 text-yellow-500">Follow Us On</p>
+                        <ul class="flex justify-between items-center">
+                            <li class="inline-flex">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook text-[#0866FF] text-4xl font-bold p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter text-[#26a7de] text-4xl font-bold p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram text-[#962fbf] text-4xl font-bold p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-whatsapp text-4xl text-[#25d366] font-bold p-2"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
