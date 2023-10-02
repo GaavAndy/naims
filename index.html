@@ -45,10 +45,10 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                 <li><a href="#gallery" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Gallery</a></li>
                 <li><a href="#events" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Events</a></li>
                 <li><a href="#login" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Login</a></li>
-                <li>
-                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
-                        <form action="" method="post" class="w-full bg-white h-[40px] rounded-full flex justify-between items-center">
-                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full border-2 text-black border-white pl-5 rounded-l-full outline-none">
+                <li class="">
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full lg:ml-20 ml-0">
+                        <form action="" method="post" class="w-full bg-gray-200 h-[30px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full bg-gray-200 border-2 text-black border-gray-200 pl-5 rounded-l-full outline-none">
                             <button type="submit" class="w-[20%]">
                                 <i class="fa-solid fa-magnifying-glass text-yellow-500"></i>
                             </button>
@@ -86,7 +86,7 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
     </nav>
    </header> 
    <main>
-    <section id="hero" class="">
+    <section id="hero">
         <div 
         class="relative overflow-hidden py-20 bg-cover bg-no-repeat lg:h-[900px] h-[1400px] p-12 text-center"
         style="background-image: url('img/tomato.jpg');">
@@ -114,42 +114,6 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
         </div>
         </div>
     </section>
-    <!-- <section id="hero" class="bg-white">
-    
-        <div class="py-6 px-10 p-5 grid lg:grid-cols-3 gap-5  grid-cols-1 bg-color-primary box">
-          <div class="w-full bg-color-primary p-5 pt-20">
-              <h1 class="font-bold lg:text-4xl text-2xl pb-10">Objectives of NAIMS</h1>
-              <p class="text-gray-200 font-medium text-sm">
-                  NAIMS strives to provide farmers, policymakers, and researchers with easy access to critical agricultural data and insights. This access enables informed decision-making, leading to improved agricultural practices and policies.
-                  NAIMS aims to centralize agricultural data from various sources, including farmers, research institutions, and government agencies, to create a comprehensive database of agricultural information...
-              </p>
-          </div>
-          <!-- card  -->
-          <!-- <div class="border-2 border-solid z-10 shadow-lg border-t-color-primary border-t-8 border-b-color-primary border-b-8 drop-shadow-lg shadow-gray-500 bg-green-700 text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-green-300 ease-in duration-200">
-              
-              <h3 class="text-xl font-bold py-4">Goals of NAIMS</h3>
-              <p class="leading-relaxed">
-                  NAIMS contributes to the sustainability of Nigeria's agricultural landscape. By promoting efficient resource utilization, reducing wastage, and optimizing production, it supports long-term sustainability goals.
-                  These objectives collectively aim to modernize and improve the Nigerian agricultural sector, leading to increased food security, economic growth, and overall development.
-              </p>
-          </div> -->
-          <!-- <div class="bg-color-primary w-full">
-              <h1 class="font-bold lg:text-4xl text-2xl pb-10">Objectives of NAIMS</h1>
-              <p class="border-b-2 lg:text-right text-left p-3 border-b-gray-300">
-                  first event listed
-              </p>
-              <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
-                  second event listed
-              </p>
-              <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
-                  third event listed
-              </p>
-              <p class="border-b-2 p-3 lg:text-right text-left mt-2 border-b-gray-300">
-                  fouth event listed
-              </p>
-          </div>
-        </div> -->
-    </section> -->
     <section id="search" class="bg-white py-3">
         <div class="container py-20">
             <div class="text-center m-auto rounded-full mb-20 md:w-2/3">
@@ -194,63 +158,161 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
             </div>
         </div>
     </section>
+   
     <section id="carousel" class="bg-white">
-        <div class="container py-20">
+        <div 
+        class="relative overflow-hidden py-20 bg-cover bg-no-repeat lg:h-[900px] h-[1400px] p-12 text-center"
+        style="background-image: url('img/g2.jpeg');">
+        <div
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="background-color: rgba(197, 187, 187, 0.6)">
+        <div class=" bg-black opacity-50 py-5 px-20">
+            <h1 class="text-color-primary lg:text-4xl p-5 mt-10 font-bold">Stay Updated with <span class="text-yellow-500">Our Latest Content</span></h1>
+            <p class="text-white font-medium text-xl text-left">NAIMS is a cutting-edge platform designed to revolutionize Nigeria's agricultural landscape. It offers a centralized hub for comprehensive agricultural data, providing valuable insights to farmers, researchers, and policymakers.</p>
+            <p class="text-white font-medium text-xl text-left">With NAIMS, you can access the latest trends, make informed decisions, and contribute to the growth and sustainability of Nigeria's vibrant agricultural sector.</p>
+        </div>
+        <div class="flex  flex-col lg:flex-row h-full -mt-[120px] lg:px-0  px-10  items-center justify-center mx-auto  lg:w-[80%] w-full">
             <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
                 <div class="col-span-2">
                     <div class="carousel-container">
                         <div class="carousel-slide">
-                          <img src="img/guine_corn.jpg" class="w-full h-full" alt="Slide 1">
+                          <img src="img/guine_corn.jpg" class="w-full rounded-lg h-full" alt="Slide 1">
                         </div>
                         <div class="carousel-slide">
-                          <img src="img/pig.jpg" class="w-full h-full" alt="Slide 2">
+                          <img src="img/pig.jpg" class="w-full h-full rounded-lg" alt="Slide 2">
                         </div>
                         <div class="carousel-slide">
-                          <img src="img/maize.jpg" class="w-full h-full" alt="Slide 3">
+                          <img src="img/maize.jpg" class="w-full h-full rounded-lg" alt="Slide 3">
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1">
-                    <div class="my-carousel">
-                        <div class="my-slide active">
-                          <img src="img/g1.jpeg" class="w-full h-full" alt="">
-                        </div>
-                        <div class="my-slide">
-                          <img src="img/g2.jpeg" class="w-full h-full" alt="">
-                        </div>
-                        <div class="my-slide">
-                          <img src="img/g3.jpeg" class="w-full h-full"  alt="">
-                        </div>
-                      </div>
-                      <button id="myPrevBtn" class="btn">
-                        <!-- <i class="fa-solid fa-angle-left"></i> -->
-                      </button>
-                      <button id="myNextBtn" class="btn">
-                        <!-- <i class="fa-solid fa-angle-right"></i> -->
-                      </button>
-                      <div class="my-pagination">
-                        <button class="my-pagination-btn active"></button>
-                        <button class="my-pagination-btn"></button>
-                        <button class="my-pagination-btn"></button>
-                      </div>
+                <div class="col-span-1">    
+                <div class='w-full col-span-1 relative lg:h-[75vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
+                    <h1 class="text-black font-bold text-3xl">Recent Post</h1>
+                        <ul>
+                            <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                            <a href="" class="flex items-center">
+                                <div class='bg-purple-100 rounded-lg p-3'>
+                                    <img src="img/cassava.jpg" class="w-[100px] h-full" alt="img">
+                                </div>
+                                <div class='pl-4'>
+                                    <p class='text-gray-800 font-bold'>Agric</p>
+                                    <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                <small class="text-gray-700 flex justify-end text-sm">
+                                    2 Hour ago
+                                </small>
+                                </div>   
+                            </a>
+                            </li>
+                            <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                <a href="" class="flex items-center">
+                                    <div class='bg-purple-100 rounded-lg p-3'>
+                                        <img src="img/crop1.jfif" class="w-[100px] h-full" alt="img">
+                                    </div>
+                                    <div class='pl-4'>
+                                        <p class='text-gray-800 font-bold'>Agric</p>
+                                        <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                    <small class="text-gray-700 flex justify-end text-sm">
+                                        2 Hour ago
+                                    </small>
+                                    </div>   
+                                </a>
+                                </li>
+                                <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                    <a href="" class="flex items-center">
+                                        <div class='bg-purple-100 rounded-lg p-3'>
+                                            <img src="img/tomato_1.jpg" class="w-[100px] h-full" alt="img">
+                                        </div>
+                                        <div class='pl-4'>
+                                            <p class='text-gray-800 font-bold'>Agric</p>
+                                            <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                        <small class="text-gray-700 flex justify-end text-sm">
+                                            2 Hour ago
+                                        </small>
+                                        </div>   
+                                    </a>
+                                    </li>
+                                    <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                        <a href="" class="flex items-center">
+                                            <div class='bg-purple-100 rounded-lg p-3'>
+                                                <img src="img/goat.jpg" class="w-[100px] h-full" alt="img">
+                                            </div>
+                                            <div class='pl-4'>
+                                                <p class='text-gray-800 font-bold'>Goat</p>
+                                                <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                            <small class="text-gray-700 flex justify-end text-sm">
+                                                2 Hour ago
+                                            </small>
+                                            </div>   
+                                        </a>
+                                        </li>
+                                        <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                            <a href="" class="flex items-center">
+                                                <div class='bg-purple-100 rounded-lg p-3'>
+                                                    <img src="img/gnut.jpg" class="w-[100px] h-full" alt="img">
+                                                </div>
+                                                <div class='pl-4'>
+                                                    <p class='text-gray-800 font-bold'>Agric</p>
+                                                    <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                                <small class="text-gray-700 flex justify-end text-sm">
+                                                    2 Hour ago
+                                                </small>
+                                                </div>   
+                                            </a>
+                                            </li>
+                                            <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                                <a href="" class="flex items-center">
+                                                    <div class='bg-purple-100 rounded-lg p-3'>
+                                                        <img src="img/crop5.jfif" class="w-[100px] h-full" alt="img">
+                                                    </div>
+                                                    <div class='pl-4'>
+                                                        <p class='text-gray-800 font-bold'>Agric</p>
+                                                        <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                                    <small class="text-gray-700 flex justify-end text-sm">
+                                                        2 Hour ago
+                                                    </small>
+                                                    </div>   
+                                                </a>
+                                                </li>
+                                                <li class='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2  cursor-pointer'>
+                                                    <a href="" class="flex items-center">
+                                                        <div class='bg-purple-100 rounded-lg p-3'>
+                                                            <img src="img/yam.jpg" class="w-[100px] h-full" alt="img">
+                                                        </div>
+                                                        <div class='pl-4'>
+                                                            <p class='text-gray-800 font-bold'>Agric</p>
+                                                            <p class='text-gray-400 text-sm'>Lorem ipsum dolor...</p>
+                                                        <small class="text-gray-700 flex justify-end text-sm">
+                                                            2 Hour ago
+                                                        </small>
+                                                        </div>   
+                                                    </a>
+                                                    </li>
+                            </ul>
+                    </div>
                 </div>
             </div>
-        </div>  
-    </section>
-    <section id="" class="bg-color-primary py-5">
+            
+        </div>
+        </div>
+        </div>
+   </section>
+   <section di="partnership" class="bg-gray-100">
+    <div class="container py-20">
+       
+    </div>  
+</section>
+    <section id="contact-us" class="bg-color-primary py-5">
         <div class="container py-5">
-        <h3 class="lg:text-4xl text-3xl font-bold text-gray-950 text-center mb-5 py-5">Lorem ipsum dolor sit, amet consectetur adipisicing.<h3>
+        <h3 class="lg:text-4xl text-3xl font-bold text-gray-950 text-center mb-5 py-5">Premium Nigerian Rice Sample.<h3>
         <div class="grid lg:grid-cols-2 gap-10 grid-cols-1">
             <div class="">
                 <img src="img/rice_1.png" class="h-[300px] w-full rounded-lg" alt="">
             </div>
             <div class="">
-                <h3 class="text-xl py-2 font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
-                <p class="text-xl font-sm text-black mt-5">Lorem ipsum dolor sit amet
-                     consectetur, adipisicing elit. Eveniet
-                      cumque fugiat deleniti voluptate molestiae possimus maxime facere dicta
-                       rerum expedita voluptatum maiores
-                     veritatis dolor, odit sit dignissimos quis, aspernatur voluptatibus!
+                <h3 class="text-xl py-2 font-medium">The Journey of Rice Growth</h3>
+                <p class="text-xl font-sm text-black mt-5">
+                    Explore the Fascinating Lifecycle of Rice - From Seed to Harvest. Discover the beauty and intricacies of rice cultivation in this visual journey through nature's cycles.
                 </p>
                 <p class="mt-5">
                     <button class="rounded-full bg-gray-600 p-3 text-center w-[30%] hover:bg-gray-800 text-xl font-semibold">Contact Us</button>
@@ -262,9 +324,9 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
     </section>
     <section id="footer" class="bg-black">
         <div class="container py-20"> 
-            <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-5">
                 <div class="lg:col-span-1 col-span-3">
-                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-3xl font-bold text-2xl lg:w-[44%] w-[30%]">Quick links</h3>
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] w-[30%]">Quick links</h3>
                     <ul>
                         <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">About Us</a></li>
                         <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Contact Us</a></li>
@@ -273,7 +335,16 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                     </ul>
                 </div>
                 <div class="lg:col-span-1 col-span-3">
-                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-3xl lg:w-[73%] w-[50%] font-bold text-2xl">More from NAIMS</h3>
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[44%] w-[30%]">Partnership</h3>
+                    <ul>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">About Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Contact Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Gallery</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-1 col-span-3">
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl lg:w-[80%] w-[50%] font-bold text-2xl">More from NAIMS</h3>
                     <ul>
                         <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Statistics</a></li>
                         <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Publications</a></li>
@@ -283,10 +354,10 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
                     </ul>
                 </div>
                 <div class="lg:col-span-1 col-span-3">
-                    <h3 class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-3xl font-bold text-2xl">News Letter</h3>
+                    <h3 class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-2xl font-bold text-2xl">News Letter</h3>
                     <div class="text-center m-auto rounded-full mb-2 md:w-full">
-                        <form action="" method="post" class="w-full bg-color-primary h-[40px] rounded-full flex justify-between items-center">
-                            <input type="email" placeholder="Enter email" class="w-[80%] h-full border-2 text-black border-color-primary pl-5 rounded-l-full outline-none">
+                        <form action="" method="post" class="w-full bg-color-primary h-[40px] rounded-lg flex justify-between items-center">
+                            <input type="email" placeholder="Enter email" class="w-[80%] h-full border-2 text-black border-none bg-gray-200 pl-5 rounded-l-lg outline-none">
                             <button type="submit" class="w-[20%]">Submit</button>
                         </form>
                     </div>
@@ -344,51 +415,6 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
         showSlide(currentSlide); // Show the initial slide
 
       </script>
-       <script>
-        const slide = document.querySelectorAll(".my-slide");
-        const prevBtn = document.getElementById("myPrevBtn");
-        const nextBtn = document.getElementById("myNextBtn");
-        const paginationButtons = document.querySelectorAll(".my-pagination-btn");
-    
-        let currentIndex = 0;
-    
-        function showSlide(index) {
-          slide.forEach((slide, i) => {
-            if (i === index) {
-              slide.classList.add("active");
-              paginationButtons[i].classList.add("active");
-            } else {
-              slide.classList.remove("active");
-              paginationButtons[i].classList.remove("active");
-            }
-          });
-        }
-    
-        function nextSlide() {
-          currentIndex = (currentIndex + 1) % slide.length;
-          showSlide(currentIndex);
-        }
-    
-        function prevSlide() {
-          currentIndex = (currentIndex - 1 + slide.length) % slide.length;
-          showSlide(currentIndex);
-        }
-    
-        nextBtn.addEventListener("click", nextSlide);
-        prevBtn.addEventListener("click", prevSlide);
-    
-        paginationButtons.forEach((btn, index) => {
-          btn.addEventListener("click", () => showSlide(index));
-        });
-    
-        function autoSlide() {
-          nextSlide();
-        }
-    
-        // Automatically slide every 3 seconds
-        setInterval(autoSlide, 3000);
-    
-        showSlide(currentIndex);
-      </script>
+
 </body>
 </html>
