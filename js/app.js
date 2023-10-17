@@ -1,8 +1,8 @@
-// Mobile Menu
+// // Mobile Menu
 const hamburger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
 const hLink = document.querySelectorAll('#hLink');
-const faSolid = document.querySelector('.fa-solid');
+const faSolid = document.querySelector('.icon');
 
 hamburger.addEventListener('click', () => {
    menu.classList.toggle('hidden')
