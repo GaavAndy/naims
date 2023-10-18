@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAIMS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Nabla&family=Niconne&family=Rubik+Gemstones&family=Tapestry&family=Varela&family=Varela+Round&display=swap');
+      </style>
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+      
+</head>
+<body class="text-color-white bg-white tracking-wider">
+  <header class="w-full h-[150px] bg-color-primary fixed top-0  z-[1000]">
+    <nav class="container w-full h-full bg-color-primary flex lg:flex-col lg:justify-center justify-between">
+     <div class="flex items-center" >
+        <div class="w-20 py-2 text text-color-secondary font-bold text-3xl">
+            <a href="index.html">
+                <img src="img/logo.png" height="100" width="100" alt="">
+            </a>
+        </div>
+        <h3 class="font-bold text-4xl leading-4 float-left ml-10 lg:block md:block hidden">
+            Nigerian Agricultural Information Management System
+        </h3>
+        <h3 class="font-bold text-4xl leading-4 float-left ml-10 block md:hidden lg:hidden">NAIMS</h3>
+     </div> 
+     <div class="container w-full   flex justify-center items-center"> 
+        <div>
+            <ul class="hidden lg:flex items-center space-x-6 ">
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <!-- <li><a href="#home" class="hover:text-color-secondary font-medium text-sm ease-in duration-200">Home</a></li> -->
+                <li><a href="about.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Contact Us</a></li>
+                <li><a href="statistics.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Statistics</a></li>
+                <li><a href="publications.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Publications</a></li>
+                <li><a href="gallery.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Gallery</a></li>
+                <li><a href="events.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Events</a></li>
+                <li><a href="login.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Login</a></li>
+                <li class="">
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full lg:ml-20 ml-0">
+                        <form action="" method="post" class="w-full bg-gray-200 h-[30px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full bg-gray-200 border-2 text-black border-gray-200 pl-5 rounded-l-full outline-none">
+                            <button type="submit" class="w-[20%]">
+                                <i class="fa-solid fa-magnifying-glass text-yellow-500"></i>
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-[100]">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu" class="hidden bg-black h-[100vh] absolute inset-0 z-50">
+            <ul class="h-full grid place-items-center py-20">
+                <li><a href="about.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Contact Us</a></li>
+                <li><a href="statistics.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Statistics</a></li>
+                <li><a href="publications.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Publications</a></li>
+                <li><a href="gallery.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Gallery</a></li>
+                <li><a href="events.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Events</a></li>
+                <li><a href="login.html" class="hover:text-color-secondary text-yellow-500 font-medium text-sm ease-in duration-200">Login</a></li>
+                <li>
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                        <form action="" method="post" class="w-full bg-white h-[40px] rounded-full flex justify-between items-center">
+                            <input type="email" placeholder="Enter Search" class="w-[80%] h-full border-2 text-black border-white pl-5 rounded-l-full outline-none">
+                            <button type="submit" class="w-[20%]">
+                                <i class="fa-solid fa-magnifying-glass text-yellow-500"></i>
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+   </header> 
+   <main>
+    <section class="w-full">
+      <div class="container mt-20 py-20 w-full h-full">
+        <div class="flex lg:justify-arround lg:flex-row justify-center flex-col ">
+          <div class="lg:flex-4 flex-12 lg:mx-0 mx-auto text-center items-center ">
+            <div id="chart_div"></div>
+          </div>
+          <div class="lg:flex-6 flex-12 lg:mx-0 mx-auto text-center items-center">
+           <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+          </div>
+        </div>
+              </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+   <section id="footer" class="bg-black">
+        <div class="container py-20"> 
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-5">
+                <div class="lg:col-span-1 col-span-3">
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] sm:w-[35%] md:w-[20%] w-[40%]">Quick links</h3>
+                    <ul>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="about.html">About Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="contact.html">Contact Us</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="gallery.html">Gallery</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-1 col-span-3">
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] sm:w-[35%] md:w-[20%] w-[40%]">Partnership</h3>
+                    <ul>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Ministry of Agriculture</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Agricultural Research Council of Nig. Abuja</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Institute for Agricultural Research</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Natural Agency for Agricultural Empowerment</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-1 col-span-3">
+                    <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl lg:w-[80%] sm:w-[35%] md:w-[50%] w-[68%] font-bold text-2xl">More from NAIMS</h3>
+                    <ul>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="statistics.html">Statistics</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="publications.html">Publications</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="events.html">Events</a></li>
+                        <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-1 col-span-3">
+                    <h3 class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-2xl font-bold text-2xl">News Letter</h3>
+                    <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                        <form action="" method="post" class="w-full bg-color-primary h-[40px] rounded-lg flex justify-between items-center">
+                            <input type="email" placeholder="Enter email" class="w-[80%] h-full border-2 text-black border-none bg-gray-200 pl-5 rounded-l-lg outline-none">
+                            <button type="submit" class="w-[20%]">Send</button>
+                        </form>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-medium ml-2 text-yellow-500">Follow Us On</p>
+                        <ul class="flex justify-between items-center">
+                            <li class="inline-flex">
+                        <a href="">
+                            <i class="fa-brands fa-facebook text-[#0866FF] text-4xl font-bold p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter text-[#26a7de] text-4xl font-bold p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram text-[#962fbf] text-4xl font-bold p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-whatsapp text-4xl text-[#25d366] font-bold p-2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+</main>
+   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+        }
+
+        function nextSlide() {
+        showSlide(currentSlide + 1);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+        showSlide(currentSlide); // Show the initial slide
+
+    </script>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Crop Statistics Chart',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawSeriesChart);
+
+    function drawSeriesChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['ID', 'Production Rate', 'Lasting Period', 'Crop',     'Size'],
+        ['Benue',    80.66,              1.67,      'Rice',  33739900],
+        ['Nasarawa',    79.84,              1.36,      'Beans',         81902307],
+        ['Nasarawa',    78.6,               1.84,      'Mango',         5523095],
+        ['Niger',    72.73,              2.78,      'Tomato',    79716203],
+        ['Benue',    80.05,              2,         'Soya beans',         61801570],
+        ['Niger',    72.49,              1.7,       'Potatoes',    73137148],
+        ['Niger',    68.09,              4.77,      'Orange',    31090763],
+        ['Benue',    81.55,              2.96,      'Cassava',    7485600],
+        ['Niger',    68.6,               1.54,      'Pepper',         141850000],
+        ['Benue',    78.09,              2.05,      'Cow pea',  307007000]
+      ]);
+
+      var options = {
+        title: 'Production rate vs Lasting Period in selected State till date' +
+          ' X=Life Expectancy, Y=Fertility, Bubble size=Population, Bubble color=Region',
+        hAxis: {title: 'Production Rate (%)'},
+        vAxis: {title: 'Lasting Period'},
+        bubble: {textStyle: {fontSize: 11}}
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+
+
+</body>
+</html>
