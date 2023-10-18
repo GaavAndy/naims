@@ -33,7 +33,7 @@
         class="container w-full h-full bg-color-primary flex lg:flex-col lg:justify-center justify-between">
         <div class="flex items-center">
           <div class="w-20 py-2 text text-color-secondary font-bold text-3xl">
-            <a href="home.html">
+            <a href="index.html">
               <img
                 src="img/logo.png"
                 height="100"
@@ -211,7 +211,7 @@
     </header>
     <main>
       <div
-        class="block max-w-sm rounded-lg bg-white my-[200px] mx-auto p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        class="block max-w-sm rounded-lg  bg-slate-600 my-[200px] mx-auto p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
         <form>
           <!--E-mail input-->
           <div
@@ -219,16 +219,15 @@
             data-te-input-wrapper-init>
             <input
               type="email"
-              class="peer block text-black min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              class="peer block text-black min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputEmail2"
               aria-describedby="emailHelp"
               placeholder="Enter email" />
             <label
               for="exampleInputEmail2"
               class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-yellow-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-yellow-200 dark:peer-focus:text-blue-500"
-              >Email address</label
-            >
-            >
+              >Email address</label>
+            
           </div>
 
           <!--Password input-->
@@ -237,7 +236,7 @@
             data-te-input-wrapper-init>
             <input
               type="password"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-yellow-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-yellow-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputPassword2"
               placeholder="Password" />
             <label
@@ -280,192 +279,83 @@
           </button>
 
           <!--Register link-->
-          <p class="mt-6 text-center text-neutral-800 dark:text-neutral-200">
+          <!-- <p class="mt-6 text-center text-neutral-800 dark:text-neutral-200">
             Not a member?
             <a
               href="#!"
               class="text-blue-500 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
               >Register</a
             >
-          </p>
+          </p> -->
         </form>
       </div>
     </main>
-    <section
-      id="footer"
-      class="bg-black">
-      <div class="container py-20">
-        <div class="grid lg:grid-cols-4 grid-cols-1 gap-5">
-          <div class="lg:col-span-1 col-span-3">
-            <h3
-              class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] w-[30%]">
-              Quick links
-            </h3>
-            <ul>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Gallery</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >News</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="lg:col-span-1 col-span-3">
-            <h3
-              class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[44%] w-[30%]">
-              Partnership
-            </h3>
-            <ul>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Gallery</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >News</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="lg:col-span-1 col-span-3">
-            <h3
-              class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl lg:w-[80%] w-[50%] font-bold text-2xl">
-              More from NAIMS
-            </h3>
-            <ul>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Statistics</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Publications</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Events</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Login</a
-                >
-              </li>
-              <li>
-                <a
-                  class="font-medium text-sm hover:text-color-primary hover:underline"
-                  href="#"
-                  >Partners</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="lg:col-span-1 col-span-3">
-            <h3
-              class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-2xl font-bold text-2xl">
-              News Letter
-            </h3>
-            <div class="text-center m-auto rounded-full mb-2 md:w-full">
-              <form
-                action=""
-                method="post"
-                class="w-full bg-color-primary h-[40px] rounded-lg flex justify-between items-center">
-                <input
-                  type="email"
-                  placeholder="Enter email"
-                  class="w-[80%] h-full border-2 text-black border-none bg-gray-200 pl-5 rounded-l-lg outline-none" />
-                <button
-                  type="submit"
-                  class="w-[20%]">
-                  Submit
-                </button>
-              </form>
-            </div>
-            <div>
-              <p class="text-2xl font-medium ml-2 text-yellow-500">
-                Follow Us On
-              </p>
-              <ul class="flex justify-between items-center">
-                <li class="inline-flex">
-                  <a href="">
-                    <i
-                      class="fa-brands fa-facebook text-[#0866FF] text-4xl font-bold p-2"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i
-                      class="fa-brands fa-twitter text-[#26a7de] text-4xl font-bold p-2"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i
-                      class="fa-brands fa-instagram text-[#962fbf] text-4xl font-bold p-2"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i
-                      class="fa-brands fa-whatsapp text-4xl text-[#25d366] font-bold p-2"></i>
-                  </a>
-                </li>
+    <section id="footer" class="bg-black">
+      <div class="container py-20"> 
+          <div class="grid lg:grid-cols-4 grid-cols-1 gap-5">
+              <div class="lg:col-span-1 col-span-3">
+                  <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] sm:w-[35%] md:w-[20%] w-[40%]">Quick links</h3>
+                  <ul>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="about.html">About Us</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="contact.html">Contact Us</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="gallery.html">Gallery</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="news.html">News</a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-1 col-span-3">
+                  <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl font-bold text-2xl lg:w-[50%] sm:w-[35%] md:w-[20%] w-[40%]">Partnership</h3>
+                  <ul>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Ministry of Agriculture</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Agricultural Research Council of Nig. Abuja</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Institute for Agricultural Research</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="#">Natural Agency for Agricultural Empowerment</a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-1 col-span-3">
+                  <h3 class="text-yellow-500 border-b-4 border-b-color-primary mb-2 lg:text-2xl lg:w-[80%] sm:w-[35%] md:w-[50%] w-[68%] font-bold text-2xl">More from NAIMS</h3>
+                  <ul>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="statistics.html">Statistics</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="publications.html">Publications</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="events.html">Events</a></li>
+                      <li><a class="font-medium text-sm hover:text-color-primary hover:underline" href="login.html">Login</a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-1 col-span-3">
+                  <h3 class="text-yellow-500 border-b-5 border-b-white mb-2 lg:text-2xl font-bold text-2xl">News Letter</h3>
+                  <div class="text-center m-auto rounded-full mb-2 md:w-full">
+                      <form action="" method="post" class="w-full bg-color-primary h-[40px] rounded-lg flex justify-between items-center">
+                          <input type="email" placeholder="Enter email" class="w-[80%] h-full border-2 text-black border-none bg-gray-200 pl-5 rounded-l-lg outline-none">
+                          <button type="submit" class="w-[20%]">Send</button>
+                      </form>
+                  </div>
+                  <div>
+                      <p class="text-2xl font-medium ml-2 text-yellow-500">Follow Us On</p>
+                      <ul class="flex justify-between items-center">
+                          <li class="inline-flex">
+                      <a href="">
+                          <i class="fa-brands fa-facebook text-[#0866FF] text-4xl font-bold p-2"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <i class="fa-brands fa-twitter text-[#26a7de] text-4xl font-bold p-2"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <i class="fa-brands fa-instagram text-[#962fbf] text-4xl font-bold p-2"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <i class="fa-brands fa-whatsapp text-4xl text-[#25d366] font-bold p-2"></i>
+                      </a>
+                  </li>
               </ul>
-            </div>
           </div>
-        </div>
       </div>
-    </section>
+          </div>
+      </div>
+  </section>
   </body>
 </html>
